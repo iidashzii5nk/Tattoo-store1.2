@@ -70,13 +70,15 @@
 .ctn-car{
 	display: flex;
 	justify-content: flex-end;
-	width: 59%;
-	height: 100px;
+	width: 60%;
+	height: 110px;
+	margin-left: 13px;
 }
 .inisesion{
+	position: relative;
 	margin-top: -17px;
-	margin-left: 110px;
-	width: 60%;
+	margin-left: 35px;
+	width: 90%;
 }
 .inisesion a{ 
 	font-size: 15px;
@@ -86,9 +88,14 @@
 .inisesion a i{ 
 	font-size: 10px;
 }
+.ctncarc{
+	position: absolute;
+	margin-left: 160px;
+}
 .ctncarc .carito a{
 	text-decoration: none;
 	color:#ffbb33;
+	padding: 7px;
 }
 .carito{
     line-height: 70px;
@@ -100,7 +107,7 @@
 	width: 1%;
 }
 .car{
-	padding: 3px;
+	padding: 7px;
 	font-size: 16px;
 }
 .vacio{
@@ -262,7 +269,7 @@ left: 55px;
    }
  
 
-@media (max-width:1410px) {
+@media (max-width:1500px) {
 	.cont-prin{
 		display: none;
 	}

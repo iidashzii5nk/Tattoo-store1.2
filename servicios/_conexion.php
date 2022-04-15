@@ -1,5 +1,5 @@
 <?php
-	$con=mysqli_connect('localhost','root','','store_ecommerce');
+$con=mysqli_connect('localhost','root','','ecomerce');
 	$con -> set_charset("utf8");
 
 	

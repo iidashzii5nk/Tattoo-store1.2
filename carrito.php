@@ -33,7 +33,7 @@
 
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script><!--Es un CDN para poder hacer que funcione el jquery menu.js-->
 
-	<script src="js/menu_respons.js"></script>
+	
 
      
      <script src="js/fot.js"></script>
@@ -43,52 +43,8 @@
 </head>
 <body>
 
-<!--************************************************************-->	
-<!------------Contenedor Logo-------------------------------------->
-<div class="cont-prin">
-<div class="ctn-1"><img class="logo" src="imagenes/logop.jpg"></div>
-		    <!--Contenedor del buscador-->
-<div class="ctn-2"><input type="text" class="src-prin" name="search" class="src" placeholder="Buscar en nuestra tienda" autocomplete="off"><i class="srcp fas fa-search"></i></div>
-
-
- <!-------Contenedor negro carrito------------> 
-
- <div class="ctn-3">
- 	<div class="ctn-car">
- <div class="ctncarc">
- 	<span class="carito">
- 	<a href="pedidos.php">
- 		<i class="car fas fa-shopping-cart"></i>
- 		CARRITO
- 		
- 	</a>
- 	</span>	
-
-<?php
-
-if (isset($_SESSION['codusu'])) {
-	
-	echo 
-	'<div class="item-option"<i class="fas fa-user"></i>'.$_SESSION['nomusu'].'</div>';
-}else{
-?>
- 	<div class="inisesion">
- 	<a href="iniciosesion.html">
- 		<i class="fas fa-arrow-right"></i>
- 		Iniciar sesión
- 	</a>
- </div>
- <?php 
-}
- ?>
- </div>
- 
- 	</div>
- </div>
-</div>
-<!--************************************************************-->
 <?php include("layauts/_main-header.php"); ?>
-<script src="js/menu_respons.js"></script>
+
   <div class="main-content">
 		<div class="content-page">
 			<h3>Mi carrito</h3>

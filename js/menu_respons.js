@@ -18,9 +18,10 @@ p.stopPropagation();
 //Ejecutando funciones
 document.getElementById("icon-search").addEventListener("click", mostrar_buscador);
 document.getElementById("icon-cancel").addEventListener("click", ocultar_buscador);
+
 //Declarando variables
 bars_search = document.getElementById("ctn-bars-search");
-inputSearch = document.getElementById("inputSearch");/*Solo con #id*/
+idbusqueda = document.getElementById("idbusqueda");/*Solo con #id*/
 bars_cancel = document.getElementById("ctn-bars-cancel");
 icon_search = document.getElementById("ctn-icon-search");
 ico_cancel = document.getElementById("icon-cancel");
@@ -30,7 +31,7 @@ ico_cancel = document.getElementById("icon-cancel");
 
 function mostrar_buscador(){
 	bars_search.style.top= "53px";//Esta funcion toma el top del contenedor
-	inputSearch.focus();
+	idbusqueda.focus();
 	icon_search.style.display= "none";
 	ico_cancel.style.display= "block";
 }
@@ -41,5 +42,5 @@ function ocultar_buscador(){
 	ico_cancel.style.display= "none";
 	icon_search.style.display= "block";
 	icon_search.style.top= "16px";
-	inputSearch.value = "";
+	idbusqueda.value = "";
 }

@@ -30,78 +30,20 @@
 
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script><!--Es un CDN para poder hacer que funcione el jquery menu.js-->
 
-	<script src="js/menu_respons.js"></script>
+	
 
      
      <script src="js/fot.js"></script>
 
 
-
 </head>
 <body>
 
-<!--************************************************************-->	
-<!------------Contenedor Logo-------------------------------------->
-<div class="cont-prin">
-<div class="ctn-1"><img class="logo" src="imagenes/logop.jpg"></div>
-		    <!--Contenedor del buscador-->
-<div class="ctn-2">
-	<input class="src-prin" type="text" id="idbusqueda" name="search" 
-	class="src" placeholder="Encuentra lo que necesitas" 
-	value="<?php if(isset($_GET['text'])){echo $_GET['text'];}
-	else{echo '';}  ?>">
-	<button class="btn-main btn-search">
-	<i class="srcp fas fa-search" onclick="search_producto()" area-hidden="true"></i></button>
-</div>
 
-
- <!-------Contenedor negro carrito------------> 
-
- <div class="ctn-3">
- 	<div class="ctn-car">
- <div class="ctncarc">
- 	<span class="carito">
- 	<a href="carrito.php">
- 		<i class="car fas fa-shopping-cart"></i>
- 		CARRITO
- 		
- 	</a>
- 	</span>	
-
-<?php
-
-if (isset($_SESSION['codusu'])) {
-	
-	echo 
-	'<div class="item-option">
-	<a href="index.php">
-	<i class="icono-usuario fas fa-user"></i>
-	Hola '
-	
-	.$_SESSION['nomusu'].'</a>'.
-	'<span class="separator">  /	</span>
-	<a href="cerrar_sesion.php"><h7>Cerrar sesión</h7></a>'.'</div>';
-}else{
-?>
- 	<div class="inisesion">
- 	<a href="login.php">
- 		<i class="fas fa-arrow-right"></i>
- 		Iniciar sesión
- 	</a>
- </div>
- <?php 
-}
- ?>
- </div>
- 
- 	</div>
- </div>
-</div>
-<!--************************************************************-->
 <?php include("layauts/_main-header.php"); ?>
 
 
-<script src="js/menu_respons.js"></script>
+
 
 
 <!--******************Slider********************************************-->
@@ -373,66 +315,7 @@ $(document).ready(function(){
 
 <!--*****Cards 5 productos mas vendidos*********************************-->
 
-<div class="top5">
-	<div class="top5prin">
-		<div class="card">
-			<div class="img"><img src="imagenes/aguja-de-tatuaje-und.jpg" alt=""></div>
-			<div class="content">
-				
-				<div class="title">Aguja und.</div>
-				<div class="sub-title">1 000 $</div>
-                <div class="btn">
-                	<button>AL CARRITO!</button>
-                </div>
-			</div>
-		</div>
-		<div class="card">
-			<div class="img"><img src="imagenes/puntera-unidad.jpg" alt=""></div>
-			<div class="content">
-				
-				<div class="title">Puntera unidad</div>
-				<div class="sub-title">600 $</div>
-                <div class="btn">
-                	<button>AL CARRITO!</button>
-                </div>
-			</div>
-		</div>
-		<div class="card">
-			<div class="img"><img src="imagenes/grips-desechables-und.jpg" alt=""></div>
-			<div class="content">
-				
-				<div class="title">Grips desec</div>
-				<div class="sub-title">2 000 $</div>
-                <div class="btn">
-                	<button>AL CARRITO!</button>
-                </div>
-			</div>
-		</div>
-		<div class="card">
-			<div class="img"><img src="imagenes/cartuchos-con-membrana.jpg" alt=""></div>
-			<div class="content">
-				
-				<div class="title">membr und.</div>
-				<div class="sub-title">5 000 $</div>
-                <div class="btn">
-                	<button>AL CARRITO!</button>
-                </div>
-			</div>
-		</div>
-		<div class="card">
-			<div class="img"><img src="imagenes/papel-hectografico-kores.jpg" alt=""></div>
-			<div class="content">
-				
-				<div class="title">hecto kores</div>
-				<div class="sub-title">3 400 $</div>
-                <div class="btn">
-                	<button>AL CARRITO!</button>
-                </div>
-			</div>
-		</div>
 
-	</div>
-</div>
 
 <!--*****Cards 5 productos mas vendidos*********************************-->
 

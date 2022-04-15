@@ -16,7 +16,7 @@
 
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script><!--Es un CDN para poder hacer que funcione el jquery menu.js-->
 
-	<script src="js/menu_respons.js"></script>
+	
 
      
      <script src="js/fot.js"></script>
@@ -125,7 +125,7 @@
 	</ul>
      </nav>
 </header>
-<script src="js/menu_respons.js"></script>
+
 
 <div class="principalctn">
 	<div class="secundarioctn">

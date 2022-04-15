@@ -1,3 +1,60 @@
+<div class="cont-prin">
+<div class="ctn-1"><img class="logo" src="imagenes/logop.jpg"></div>
+		    <!--Contenedor del buscador-->
+<div class="ctn-2" id="ctn-bars-search">
+	<input class="src-prin" type="text" id="idbusqueda" name="search" 
+	class="src" placeholder="Encuentra lo que necesitas" 
+	value="<?php if(isset($_GET['text'])){echo $_GET['text'];}
+	else{echo '';}  ?>">
+	<button class="btn-main btn-search">
+	<i class="srcp fas fa-search" onclick="search_producto()" area-hidden="true"></i></button>
+</div>
+
+
+ <!-------Contenedor negro carrito------------> 
+
+ <div class="ctn-3">
+ 	<div class="ctn-car">
+ <div class="ctncarc">
+ 	<span class="carito">
+ 	<a href="carrito.php">
+ 		<i class="car fas fa-shopping-cart"></i>
+ 		CARRITO
+ 		
+ 	</a>
+ 	</span>	
+
+<?php
+
+if (isset($_SESSION['codusu'])) {
+	
+	echo 
+	'<div class="item-option">
+	<a href="index.php">
+	<i class="icono-usuario fas fa-user"></i>
+	Hola '
+	
+	.$_SESSION['nomusu'].'</a>'.
+	'<span class="separator">  /	</span>
+	<a href="cerrar_sesion.php"><h7>Cerrar sesión</h7></a>'.'</div>';
+}else{
+?>
+ 	<div class="inisesion">
+ 	<a href="login.php">
+ 		<i class="fas fa-arrow-right"></i>
+ 		Iniciar sesión
+ 	</a>
+ </div>
+ <?php 
+}
+ ?>
+ </div>
+ 
+ 	</div>
+ </div>
+</div>
+
+
 <header>
 	<input type="checkbox" id="btn-menu">
     <label class="icon-th-list" for="btn-menu"></label>
@@ -5,12 +62,16 @@
 <!------Barra de menu Respons-------------------------------->
 
 <div class="conten-respons"><!--Barra de menu Respons-->
+
+
 <div id="ctn-icon-search">
 	<i class="icon-search" id="icon-search"></i>
 </div>
+
 <div id="ctn-icon-cancel">
 	<i class="icon-cancel" id="icon-cancel"></i>
 </div>
+
 		<div class="cont-respons-logo">
 			<img class="logo-tattoo" src="imagenes/logo-black.jpg">
 		</div>
@@ -67,3 +128,7 @@
      </nav>
 
 </header>
+
+<script src="js/menu_respons.js"></script>
+
+
